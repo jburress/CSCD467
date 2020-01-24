@@ -51,7 +51,7 @@ import com.amazonaws.services.s3.model.S3ObjectSummary;
  * <p>
  * Fill in your AWS access credentials in the provided credentials file
  * template, and be sure to move the file to the default location
- * (C:\\Users\\John\\.aws\\credentials) where the sample code will load the credentials from.
+ * (***PATH***) where the sample code will load the credentials from.
  * <p>
  * <b>WARNING:</b> To avoid accidental leakage of your credentials, DO NOT keep
  * the credentials file in your source directory.
@@ -65,7 +65,7 @@ public class S3Sample {
         /*
          * The ProfileCredentialsProvider will return your [default]
          * credential profile by reading from the credentials file located at
-         * (C:\\Users\\John\\.aws\\credentials).
+         * (***PATH***).
          */
         AWSCredentials credentials = null;
         try {
@@ -74,7 +74,7 @@ public class S3Sample {
             throw new AmazonClientException(
                     "Cannot load the credentials from the credential profiles file. " +
                     "Please make sure that your credentials file is at the correct " +
-                    "location (C:\\Users\\John\\.aws\\credentials), and is in valid format.",
+                    "location (***PATH***), and is in valid format.",
                     e);
         }
 
